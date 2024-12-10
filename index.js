@@ -50,19 +50,31 @@ function calculatesFarePrice(start, end) {
     const feetPerBlock = 264
     let distance
     let feetDistance 
+    
     if (start >= end) {
         distance = start - end
     }
     else {
         distance = end - start
     }
+   
     feetDistance = distance * feetPerBlock
-
-    let fareMiles = feetDistance - 400
-    if (fareMiles = 0) {
-        return 'gives customers a free sample'
+     let fareMiles = feetDistance - 400
+    
+        if (fareMiles <= 0) {
+        return 0
+    }
+    
+        if (fareMiles <= 1600){
+        return fareMiles * 0.02
+    }
+    
+        if (fareMiles + 400 <= 2500) {
+        return 25
     }
 
-    
+        else {
+        return 'cannot travel that far'
+    }
 }
  
