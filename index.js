@@ -45,4 +45,24 @@ function distanceTravelledInFeet(start, end) {
     return feetDistance
 }
 
+//Calulate Fare
+function calculatesFarePrice(start, end) {
+    const feetPerBlock = 264
+    let distance
+    let feetDistance 
+    if (start >= end) {
+        distance = start - end
+    }
+    else {
+        distance = end - start
+    }
+    feetDistance = distance * feetPerBlock
+
+    let fareMiles = feetDistance - 400
+    if (fareMiles = 0) {
+        return 'gives customers a free sample'
+    }
+
+    
+}
  

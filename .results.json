@@ -5,9 +5,9 @@
     "passes": 9,
     "pending": 0,
     "failures": 1,
-    "start": "2024-12-10T14:29:51.287Z",
-    "end": "2024-12-10T14:29:51.621Z",
-    "duration": 334
+    "start": "2024-12-10T14:56:26.585Z",
+    "end": "2024-12-10T14:56:26.927Z",
+    "duration": 342
   },
   "tests": [
     {
@@ -82,8 +82,11 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: calculatesFarePrice is not defined\n    at Context.<anonymous> (test/indexTest.js:48:7)\n    at process.processImmediate (node:internal/timers:483:21)",
-        "message": "calculatesFarePrice is not defined"
+        "message": "expected -136 to equal 0",
+        "showDiff": true,
+        "actual": "-136",
+        "expected": "0",
+        "stack": "AssertionError: expected -136 to equal 0\n    at Context.<anonymous> (test/indexTest.js:48:46)\n    at process.processImmediate (node:internal/timers:483:21)"
       }
     }
   ],
